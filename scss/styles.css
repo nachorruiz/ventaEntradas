@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+/* BACKGROUND */
+.bg-body-tertiary {
+  --bs-bg-opacity: 0 !important;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 999;
+}
+.navbar-nav .nav-link:hover {
+  transition: 0.3s;
+  text-decoration: line-through;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+#logo {
+  width: 50px;
+  border-radius: 25%;
+}
+
+.navbar-brand {
+  z-index: 9999;
+}
+
+.headerContainer {
+  position: relative;
+  height: 60vh;
+  width: auto;
+  overflow: hidden;
+  background-image: url(../styles/imagenes/concert2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: 0 0 10px 2px gray;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.headerContainer:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.text h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150px;
+  color: white;
+  text-shadow: 0px 0px 15px rgb(39, 38, 38);
+}
+.text .headerButton {
+  background-color: rgba(110, 16, 16, 0.9);
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin: 0 27%;
+}
+.text .headerButton:hover {
+  transition: 0.3s;
+  background-color: #be2323;
+  box-shadow: 0 0 10px 0 white;
+}
+.text .headerButton a {
+  color: black;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* BACKGROUND */
+.backgroundMain {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
+  /*background-image: linear-gradient(to right, #232526, #2a2c2d, #323435, #393b3d, #414345); */
+  overflow-x: hidden;
+}
+
+.containerAboutUs .aboutUs {
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 400px;
+}
+.containerAboutUs .aboutUs h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: white;
+  text-shadow: 0px 0px 15px rgb(39, 38, 38);
+  text-align: center;
+}
+.containerAboutUs .aboutUs .imgUs {
+  width: 100%;
+  position: relative;
+}
+.containerAboutUs .textoAboutUs {
+  margin-right: 2%;
+  margin-left: 480px;
+  float: right;
+  position: relative;
+  bottom: 400px;
+}
+.containerAboutUs .textoAboutUs p {
+  color: white !important;
+  font-family: "Freeman", sans-serif;
+  font-style: normal;
+  float: right;
+}
+.containerAboutUs .discografia-container {
+  float: right;
+  display: flex;
+  margin-right: 25px;
+  margin-left: 480px;
+  gap: 30px;
+}
+.containerAboutUs .discografia-container .discografia {
+  position: relative;
+  bottom: 400px;
+  display: flex;
+  width: 50%;
+}
+.containerAboutUs .discografia-container .discografia:hover .discos {
+  opacity: 0.3;
+}
+.containerAboutUs .discografia-container .discografia .discos {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  box-shadow: 0 0px 20px -10px rgb(91, 194, 134);
+}
+.containerAboutUs .discografia-container .discografia .middlePlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.containerAboutUs .discografia-container .discografia .middlePlay:hover {
+  opacity: 1;
+}
+.containerAboutUs .discografia-container .discografia .middlePlay .buttonPlay {
+  font-size: 70px;
+  padding: 16px 32px;
+}/*# sourceMappingURL=styles.css.map */
