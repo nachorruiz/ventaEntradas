@@ -38,45 +38,72 @@
             float: right;
         }
     }
-    .discografia-container{
-        float: right;
-        display: flex;
-        margin-right: 25px;
+    .discografia {
+        height: 300px;
         margin-left: 480px;
-        gap: 30px;
-        .discografia {
+        position: relative;
+        bottom: 400px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        background-image: url(/styles/imagenes/discografia/background.jpg);
+        background-repeat: no-repeat;
+        //background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255,255,255,0.1)), url(/styles/imagenes/discografia/background.jpg);
+        background-size: cover;
+        border-radius: 2%;
+        //box-shadow: 0 0 50px -30px white;
+        .disco {
+            width: 150px;
+            height: 250px;
+            margin: auto;
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            border-radius: 4%;
+            box-shadow: 0 0 10px 5px rgb(32, 32, 32);
+            transition: 0.3s;
             position: relative;
-            bottom: 400px;
-            display: flex;
-            width: 50%;
             &:hover {
-                .discos {
-                    opacity: 0.3;
+                .img{
+                    opacity: 0.5;
                 }
+                .playDisc {
+                    opacity: 1;
+                }
+                height: 255px;
             }
-            .discos{
+            img {
                 opacity: 1;
-                display: block;
-                width: 100%;
-                height: auto;
                 transition: .5s ease;
                 backface-visibility: hidden;
-                box-shadow: 0 0px 20px -10px rgb(91, 194, 134);
+                display: block;
+                width: 100%;
+                height: 80%;
+                border-radius: 4%;
             }
-            .middlePlay {
+            p {
+                padding: 10px 20px;
+                text-align: center;
+                color: white;
+            }
+            .playDisc {
                 transition: .5s ease;
                 opacity: 0;
                 position: absolute;
-                top: 50%;
+                top: 45%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
-                &:hover {
-                    opacity: 1;
-                }
-                .buttonPlay {
-                    font-size: 70px;
+                .playButton {
                     padding: 16px 32px;
+                    img {
+                        width: 50px;
+                        opacity: 0.7;
+                    }
+                    &:hover {
+                        img {
+                            width: 55px;
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }
