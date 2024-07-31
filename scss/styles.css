@@ -107,6 +107,9 @@
   overflow-x: hidden;
 }
 
+.containerAboutUs {
+  height: 700px;
+}
 .containerAboutUs .aboutUs {
   margin-left: 2%;
   margin-top: 2%;
@@ -121,9 +124,42 @@
   text-shadow: 0px 0px 15px rgb(39, 38, 38);
   text-align: center;
 }
+.containerAboutUs .aboutUs .imagenPrincipal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+}
+.containerAboutUs .aboutUs .imagenPrincipal::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+  border-radius: 2%;
+  background: linear-gradient(235deg, #000000, #641511, #000000);
+}
+.containerAboutUs .aboutUs .imagenPrincipal::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+  border-radius: 2%;
+  background: linear-gradient(235deg, #000000, #641511, #000000);
+}
 .containerAboutUs .aboutUs .imgUs {
   width: 100%;
   position: relative;
+  border-radius: 2%;
 }
 .containerAboutUs .textoAboutUs {
   margin-right: 2%;
@@ -146,10 +182,10 @@
   display: flex;
   gap: 10px;
   justify-content: center;
-  background-image: url(/styles/imagenes/discografia/background.jpg);
+  /*background-image: url(/styles/imagenes/discografia/image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 2%;
+  border-radius: 2%;*/
 }
 .containerAboutUs .discografia .disco {
   width: 150px;
@@ -203,4 +239,60 @@
 .containerAboutUs .discografia .disco .playDisc .playButton:hover img {
   width: 55px;
   opacity: 1;
+}
+
+.containerShows {
+  height: 1000px;
+  margin-left: 2%;
+}
+.containerShows .show {
+  height: 33.3%;
+  width: 100%;
+  margin-bottom: 15%;
+}
+.containerShows .show .ciudad {
+  font-size: 20px;
+  color: white;
+  position: relative;
+  top: 5%;
+  left: 15%;
+}
+.containerShows .show .imagenShow {
+  height: 100%;
+  width: 40%;
+  border-radius: 2%;
+  position: relative;
+  bottom: 114%;
+}
+.containerShows .show .fechas {
+  height: 100%;
+  width: 60%;
+  position: relative;
+  left: 40%;
+  text-align: left;
+}
+.containerShows .show .fechas .fecha {
+  position: relative;
+  top: 22%;
+  height: 30px;
+}
+.containerShows .show .fechas .fecha p {
+  margin-left: 4%;
+  margin-top: 5%;
+  color: white;
+}
+.containerShows .show .fechas .fecha .botonFecha {
+  background-color: yellow;
+  position: relative;
+  left: 80%;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 8px;
+  border: none;
+  bottom: 40px;
+}
+.containerShows .show .fechas .fecha .botonFecha a {
+  text-decoration: none;
+  color: white;
+  font: normal;
 }/*# sourceMappingURL=styles.css.map */

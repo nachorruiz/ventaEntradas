@@ -1,0 +1,61 @@
+.containerShows{
+    //background-color: red; 
+    height: 1000px;
+    margin-left: 2%;
+    .show{
+        //background-color: green;
+        height: 33.3%;
+        width: 100%;
+        margin-bottom: 15%;
+        .ciudad{
+            font-size: 20px;
+            color: white;
+            position: relative;
+            top: 5%;
+            left: 15%;
+        }
+        .imagenShow{
+            //background-color: yellow;
+            height: 100%;
+            width: 40%;
+            border-radius: 2%;
+            position: relative;
+            bottom: 114%;
+        }
+
+        .fechas{
+            //background-color: blue;
+            height: 100%;
+            width: 60%;
+            position: relative;
+            left: 40%;
+            text-align: left;
+            .fecha{
+                position: relative;
+                top: 22%;
+                //background-color: violet;
+                height: 30px;
+                p{
+                    margin-left: 4%;
+                    margin-top: 5%;
+                    color: white;
+                }
+                .botonFecha{
+                    background-color: yellow;
+                    position: relative;
+                    left: 80%;
+                    font-size: 14px;
+                    padding: 5px;
+                    border-radius: 8px;
+                    border: none;
+                    bottom: 40px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font: normal;
+                    }
+                }
+            }
+        }
+    }
+}
